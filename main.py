@@ -23,18 +23,11 @@ async def on_disconnect():
     print("Not ready!")
 
 @client.event
-async def on_message(date):
-    if date.content.lower() == "date":
-        await date.channel.send(now.strftime('%H:%M:%S on %A, %B the %dth, %Y'))
-
-
-
-@client.event 
-async def on_message(ping):
-    if ping.content.lower() == "ping":
-        await ping.channel.send ("Pong!")
-    
-
-
+async def on_message(message):
+        if message.content.lower() == "date":
+          await message.channel.send(now.strftime('%H:%M:%S on %A, %B the %dth, %Y'))
+        if message.content.lower() == "ping":
+          await message.channel.send("Pong!")
+        
 
 client.run ("MTA0Mjc1NDA0ODc3Mzg2OTU3OQ.GOakq5.AUf6-ld_s0zoTF9wsmQurFt56ZdhkIMDJeoLfU")
