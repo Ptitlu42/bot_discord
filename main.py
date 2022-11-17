@@ -5,7 +5,7 @@ from discord.ext import commands
 
 now = datetime.datetime.now()
 
-TOKEN = 'MTA0Mjc1NDA0ODc3Mzg2OTU3OQ.G_MX5d.cIErcGJjuHA-rHfdtGEDAw0sdIbPqbIEHHIeC8'
+TOKEN = 'MTA0Mjc1NDA0ODc3Mzg2OTU3OQ.GOakq5.AUf6-ld_s0zoTF9wsmQurFt56ZdhkIMDJeoLfU'
 
 intents = discord.Intents.default()
 intents.message_content = True
@@ -37,4 +37,4 @@ async def on_message(ping):
 
 
 
-client.run ("MTA0Mjc1NDA0ODc3Mzg2OTU3OQ.G_MX5d.cIErcGJjuHA-rHfdtGEDAw0sdIbPqbIEHHIeC8")
+client.run ("MTA0Mjc1NDA0ODc3Mzg2OTU3OQ.GOakq5.AUf6-ld_s0zoTF9wsmQurFt56ZdhkIMDJeoLfU")
