@@ -12,7 +12,6 @@ intents.message_content = True
 
 client = commands.Bot(command_prefix='', intents=intents)
 
-a = False
 
 @client.event
 async def on_ready():
@@ -26,15 +25,15 @@ async def on_disconnect():
 @client.event
 async def on_message(date):
     if date.content.lower() == "date":
-        await date.channel.send("date!")
-
-@client.event
-async def on_message(message):
-    if message.content.lower() == "ping":
-        await message.channel.send("Pong!")
-        
+        await date.channel.send(now.strftime('%H:%M:%S on %A, %B the %dth, %Y'))
 
 
+
+@client.event 
+async def on_message(ping):
+    if ping.content.lower() == "ping":
+        await ping.channel.send ("Pong!")
+    
 
 
 
